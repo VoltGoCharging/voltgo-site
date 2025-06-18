@@ -1,4 +1,4 @@
-import VoltGoWebsite from "@/components/VoltGoWebsite";
+import VoltGoWebsite from '../components/VoltGoWebsite';
 
 export default function Home() {
   return <VoltGoWebsite />;
