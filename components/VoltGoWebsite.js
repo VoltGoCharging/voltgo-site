@@ -1,7 +1,7 @@
-"use client";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
 import { Phone, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function VoltGoWebsite() {
   const plans = [
@@ -98,16 +98,46 @@ export default function VoltGoWebsite() {
       <section className="py-16 px-6 bg-[#1b1d20]">
         <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-6 text-left">
-          <div><h3 className="text-xl font-semibold">What areas do you serve?</h3><p className="text-gray-300">All of San Diego County.</p></div>
-          <div><h3 className="text-xl font-semibold">What vehicles do you support?</h3><p className="text-gray-300">All EV makes and models.</p></div>
-          <div><h3 className="text-xl font-semibold">Can you reach me if I’m in a garage or remote area?</h3><p className="text-gray-300">Yes — as long as it's legally accessible.</p></div>
-          <div><h3 className="text-xl font-semibold">How long does a charge take?</h3><p className="text-gray-300">30 minutes to 1 hour for a top-off.</p></div>
-          <div><h3 className="text-xl font-semibold">How much range will I get?</h3><p className="text-gray-300">15–30 miles per top-off.</p></div>
-          <div><h3 className="text-xl font-semibold">Are you available 24/7?</h3><p className="text-gray-300">Yes — with $50 after-hours fee from 10 PM to 6 AM.</p></div>
-          <div><h3 className="text-xl font-semibold">Can I schedule a charge in advance?</h3><p className="text-gray-300">Yes, via app or web.</p></div>
-          <div><h3 className="text-xl font-semibold">Do I need to be present?</h3><p className="text-gray-300">Yes, at arrival — but you may leave during charge.</p></div>
-          <div><h3 className="text-xl font-semibold">Can I cancel a request?</h3><p className="text-gray-300">Free cancel within 10 minutes. After that, $50 may apply.</p></div>
-          <div><h3 className="text-xl font-semibold">How do I set up a fleet contract?</h3><p className="text-gray-300">Email us at <strong>info@voltgocharging.com</strong>.</p></div>
+          <div>
+            <h3 className="text-xl font-semibold">What areas do you serve?</h3>
+            <p className="text-gray-300">VoltGo proudly serves all of San Diego County with mobile EV charging services.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">What vehicles do you support?</h3>
+            <p className="text-gray-300">We support all electric vehicle makes and models.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Can you reach me if I’m in a garage or remote area?</h3>
+            <p className="text-gray-300">Yes. Our vans are built for accessibility and will reach you wherever you are, as long as it's legally accessible.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">How long does a charge take?</h3>
+            <p className="text-gray-300">Most top-offs take between 30 minutes to 1 hour depending on the vehicle — enough to get you confidently back on the road.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">How much range will I get?</h3>
+            <p className="text-gray-300">We deliver 15–30 miles of range per top-off, enough to reach the nearest charging station or get you home safely.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Are you available 24/7?</h3>
+            <p className="text-gray-300">Yes — we operate 24/7. A $50 after-hours surcharge applies for service between 10 PM and 6 AM.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Can I schedule a charge in advance?</h3>
+            <p className="text-gray-300">Yes, advance scheduling is available for both emergencies and routine top-offs.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Do I need to be present during the charge?</h3>
+            <p className="text-gray-300">You must be present when we arrive, but you may leave during the charging process.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Can I cancel a request?</h3>
+            <p className="text-gray-300">Yes, you may cancel up to 10 minutes after the request with no penalty. After that, a $50 cancellation fee may apply depending on how far the driver has traveled.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">How do I set up a fleet contract?</h3>
+            <p className="text-gray-300">Please email us at info@voltgocharging.com to discuss a custom fleet solution for your business.</p>
+          </div>
         </div>
       </section>
 
