@@ -1,3 +1,4 @@
+"use client";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
@@ -97,6 +98,26 @@ export default function VoltGoWebsite() {
       <section className="py-16 px-6 bg-[#1b1d20]">
         <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-6 text-left">
-          <div><h3 className="text-xl font-semibold">What areas do you serve?</h3><p className="text-gray-300">VoltGo proudly serves all of San Diego County with mobile EV charging services.</p></div>
-          <div><h3 className="text-xl font-semibold">What vehicles do you support?</h3><p className="text-gray-300">We support all electric vehicle makes and models.</p></div>
-          <div><h3 className="text-xl font-semibold">Can you reach me if I’m in a garage or remote area?</h3><p className="text-gray-300">Yes. Our vans are built for accessibility and will reach you wherever you are, as long as it's legally accessib
+          <div><h3 className="text-xl font-semibold">What areas do you serve?</h3><p className="text-gray-300">All of San Diego County.</p></div>
+          <div><h3 className="text-xl font-semibold">What vehicles do you support?</h3><p className="text-gray-300">All EV makes and models.</p></div>
+          <div><h3 className="text-xl font-semibold">Can you reach me if I’m in a garage or remote area?</h3><p className="text-gray-300">Yes — as long as it's legally accessible.</p></div>
+          <div><h3 className="text-xl font-semibold">How long does a charge take?</h3><p className="text-gray-300">30 minutes to 1 hour for a top-off.</p></div>
+          <div><h3 className="text-xl font-semibold">How much range will I get?</h3><p className="text-gray-300">15–30 miles per top-off.</p></div>
+          <div><h3 className="text-xl font-semibold">Are you available 24/7?</h3><p className="text-gray-300">Yes — with $50 after-hours fee from 10 PM to 6 AM.</p></div>
+          <div><h3 className="text-xl font-semibold">Can I schedule a charge in advance?</h3><p className="text-gray-300">Yes, via app or web.</p></div>
+          <div><h3 className="text-xl font-semibold">Do I need to be present?</h3><p className="text-gray-300">Yes, at arrival — but you may leave during charge.</p></div>
+          <div><h3 className="text-xl font-semibold">Can I cancel a request?</h3><p className="text-gray-300">Free cancel within 10 minutes. After that, $50 may apply.</p></div>
+          <div><h3 className="text-xl font-semibold">How do I set up a fleet contract?</h3><p className="text-gray-300">Email us at <strong>info@voltgocharging.com</strong>.</p></div>
+        </div>
+      </section>
+
+      <section className="py-16 px-6 text-center bg-[#1b1d20]">
+        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+        <p className="mb-2 flex justify-center items-center gap-2 text-lg text-blue-300"><Phone size={20} /> (619) 555-1234</p>
+        <p className="mb-6 flex justify-center items-center gap-2 text-lg text-blue-300"><Mail size={20} /> info@voltgocharging.com</p>
+        <Button className="px-6 py-3 rounded-2xl text-lg shadow bg-blue-600 hover:bg-blue-700">Request a Charge</Button>
+        <p className="text-sm text-gray-400 mt-4">Thanks for contacting VoltGo. Your request has been received. We’ll get back to you as soon as possible.</p>
+      </section>
+    </div>
+  );
+}
